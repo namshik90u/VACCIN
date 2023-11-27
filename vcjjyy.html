@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>백신 접종 예약</title>
+</head>
+
+	<style>
+		h1{
+			text-align:center;
+		}
+		table{
+			margin:Auto;
+		}
+		th{
+		text-align:center;
+		}
+		
+	</style>
+
+<form action="vcjjyyinsert.jsp">
+<body>
+<h1>백신 접종 예약</h1>
+	<table border="1">
+		<tr>
+			<th>접종예약번호</th>
+			<td><input type="text" name="RESVNO">예) 20210001</td>
+		</tr>
+		<tr>
+			<th>주민번호</th>
+			<td><input type="text" name="JUMIN">예) 710101-1000001</td>
+		</tr>
+		<tr>
+			<th>백신코드</th>
+			<td><input type="text" name="VCODE">예) V001~V003</td>
+		</tr>
+		<tr>
+			<th>병원코드</th>
+			<td><input type="text" name="HOSPCODE">예) H001</td>
+		</tr>
+		<tr>
+			<th>예약일자</th>
+			<td><input type="text" name="RESVDATE">예) 20211231</td>
+		</tr>
+		<tr>
+			<th>예약시간</th>
+			<td><input type="text" name="RESVYIME">예) 1230</td>
+		</tr>
+		<tr>
+			<th colspan="2">
+			<button type="submit">등록</button>
+			<button type="button" onclick="location.href='vcjjyy.html';">다시쓰기</button>
+			</th>
+		</tr>
+	</table>
+</body>
+</form>
+</html>
